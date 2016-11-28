@@ -17,11 +17,12 @@ import random
 
 #user agent
 user_agent = ("Random Compliments: 0.1: by /u/BigBaldSheep"
-              "inset github here")
+              "https://github.com/jebiggs/Random-Compliments-Bot")
 
 #login to reddit
 r = praw.Reddit(user_agent = user_agent)
-#r.login('bot_username', 'bot_password') #depricated, fix
+#Left out login because nobody on the internet needs to know
+r.login('bot_username', 'bot_password') #depricated, fix
 
 #create a list of the things already commented on
 #Note, this will only be current for as long as the bot is running
